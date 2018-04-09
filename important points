@@ -1,0 +1,21 @@
+Time Complexity of Normal KNN: O(nd)
+n is the size of the training
+d is the dimensionality
+
+Two methods for reducing the cost of KNN:
+1) fast finding the nearest samples
+	a) Certainly Factor (CF) measure to deal with the unsuitability of skewed class distribution in kNN methods
+	b) density-based method for reducing the amount of training data
+	c) use of labeled samples and add the screening process condition
+2) selecting representative samples (or removing some samples)
+
+Algorithm:
+1) Training Process: to select a nearest cluster for each test sample as it's new training dataset
+	Types of clustering:
+	a) density-based clustering
+	b) grid-based clustering
+	c) partitioning clustering
+	d) hierarchical clustering
+	e) Landmark-based Spectral Clustering (LSC)
+	-> We use LSC because of it's low complexity and scales linearly with the dataset.
+2) Testing Process: to classify each test sample by kNN algorithm within it's nearest cluster
